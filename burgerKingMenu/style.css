@@ -1,6 +1,9 @@
 *{
     margin: 0;
 }
+:root{
+    --fuente:"Flame Bold", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
+}
 
 
 
@@ -15,17 +18,54 @@
 
 }
 
+
+/*Contiene a los demas div*/
 #headerInitDiv{
     position: relative;
     display: flex;
-    padding-left: 5%;
-    padding-right: 5%;
+    padding-left: 1.8%;
+    padding-right: 1.8%;
+    align-items: center;
 }
 
 /*hT1, hT2 y hT3 son divs dentro de headerInitDiv, contienen los sus respectivos elementos*/
 #hI1{
     width: 50%;
     display: flex;
+    align-items: center;
+    gap: 20px;
+}
+#hI1 img{
+    height: 17px;
+}
+#hI1 p{
+    color: #502314;
+    font-size: 1.2rem;
+    font-weight: bold;
+    letter-spacing: -1px;
+    font-family: monospace;
+    cursor: pointer;
+}
+
+#hI1 p:hover{
+
+    color: rgb(214,35,0);
+
+
+}
+
+#hI1 #menuTexto{
+    color:rgb(214,35,0);
+    text-decoration-line:underline;
+    text-decoration-color:rgb(214,35,0);
+    text-decoration-thickness: 2.5px;
+    text-underline-offset:6px ;
+}
+
+
+.logoPrincipal img{
+    width: 76px;
+    cursor: pointer;
 }
 
 #hI3{
@@ -33,9 +73,26 @@
     flex-direction: row-reverse;
     width: 50%;
 }
+#hI3 button{
+    background-color: rgb(214,35,0);
+    color:white;
+    border-radius: 100px;
+    height: 26px;
+    width: 91px;
+    padding: 0px 0px 5px 0px;
+    font-weight: bold;
+    font-size: 80%;
+    border: 0px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#hI3 button:hover{
+    background-color:rgb(167, 33, 6) ;
+}
 
 
-
+/*Segundo header que contiene el botón del mundo y el idioma*/
 #headerSecond{
     height: 33px;
     background-color:#f5ebdc ;
@@ -45,10 +102,13 @@
     flex-direction: row-reverse;
 }
 
-
+/*Contenedor del título de la pagina (Nuestro menú)*/
 #headerMenu{
     height: 55px;
     background-color: rgb(80,35,20);
     color:rgb(245,235,220);
     text-align: center;
+    font-family: var(--fuente);
+    font-weight: 900;
+    font-size: clamp(0.2rem, 1.5rem, 2rem);
 }
