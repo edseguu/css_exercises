@@ -1,0 +1,54 @@
+*{
+    margin: 0;
+}
+
+
+
+
+/*Header inicial*/
+#headerInit{
+    background-color: #f5ebdc;
+    height: 78px;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(68, 68, 68, 0.151);
+    border-bottom-style: solid;
+
+}
+
+#headerInitDiv{
+    position: relative;
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+/*hT1, hT2 y hT3 son divs dentro de headerInitDiv, contienen los sus respectivos elementos*/
+#hI1{
+    width: 50%;
+    display: flex;
+}
+
+#hI3{
+    display: flex;
+    flex-direction: row-reverse;
+    width: 50%;
+}
+
+
+
+#headerSecond{
+    height: 33px;
+    background-color:#f5ebdc ;
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+
+#headerMenu{
+    height: 55px;
+    background-color: rgb(80,35,20);
+    color:rgb(245,235,220);
+    text-align: center;
+}
