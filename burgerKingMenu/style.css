@@ -100,6 +100,18 @@
     position: relative;
     display: flex;
     flex-direction: row-reverse;
+    align-items: center;
+    gap: 5px;
+
+}
+
+#headerSecond img{
+    height: 20px;
+}
+#headerSecond p{
+    color: rgb(161,132,114);
+    font-weight: bold;
+    padding-right: 2.3%;
 }
 
 /*Contenedor del título de la pagina (Nuestro menú)*/
@@ -112,3 +124,10 @@
     font-weight: 900;
     font-size: clamp(0.2rem, 1.5rem, 2rem);
 }
+
+
+
+
+/*Cuerpo del menú*/
+/*---------------*/
+
