@@ -1,5 +1,9 @@
 *{
     margin: 0;
+
+}
+body{
+    background-color: rgb(245,235,220);;
 }
 :root{
     --fuente:"Flame Bold", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
@@ -130,4 +134,27 @@
 
 /*Cuerpo del menú*/
 /*---------------*/
+
+#containerMenu{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+
+}
+
+.divMenu img{
+    position: relative;
+    height: 85%;
+    width: 100%;
+    object-fit: cover; 
+}
+
+.divMenu{
+    background-color: white;
+    height: 100%;
+    width: 60%;
+    border-radius: 5%;
+}
+
+
 
