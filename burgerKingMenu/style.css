@@ -3,8 +3,10 @@
 
 }
 body{
-    background-color: rgb(245,235,220);;
+    background-color: rgb(245,235,220);
+
 }
+
 :root{
     --fuente:"Flame Bold", "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;
 }
@@ -14,17 +16,21 @@ body{
 
 /*Header inicial*/
 #headerInit{
+    position: sticky;
+    top: 0px;
     background-color: #f5ebdc;
     height: 78px;
     border-bottom-width: 1px;
     border-bottom-color: rgba(68, 68, 68, 0.151);
     border-bottom-style: solid;
+    z-index: 30;
 
 }
 
 
 /*Contiene a los demas div*/
 #headerInitDiv{
+
     position: relative;
     display: flex;
     padding-left: 1.8%;
@@ -101,11 +107,16 @@ body{
     height: 33px;
     background-color:#f5ebdc ;
     width: 100%;
-    position: relative;
+    position: sticky;
+    top: 79px;
     display: flex;
     flex-direction: row-reverse;
     align-items: center;
     gap: 5px;
+    z-index: 30;
+    border-bottom-width: 1px;
+    border-bottom-color: rgba(68, 68, 68, 0.151);
+    border-bottom-style: solid;
 
 }
 
@@ -136,24 +147,42 @@ body{
 /*---------------*/
 
 #containerMenu{
+
+    position: relative;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    align-items: center;
+    grid-template-columns: 5fr 5fr 5fr;
+    gap: 22px;
+    width: 63%;
+
+    left: 50%;
+    transform: translate(-50%);
+    padding-top: 1.6%;
+    
 
 }
 
 .divMenu img{
     position: relative;
-    height: 85%;
+    height: 78%;
     width: 100%;
     object-fit: cover; 
+    border-radius: 4% 4% 0 0 ;
+
 }
 
 .divMenu{
     background-color: white;
-    height: 100%;
-    width: 60%;
-    border-radius: 5%;
+    height:100%;
+    width: 100%;
+    border-radius: 4%;
+    text-align:center;
+    box-shadow:0px 0px 2px rgba(0, 0, 0, 0.267);
+    color: rgb(80,35,20);
+    font-weight: bold;
+}
+.divMenu p{
+    position: relative;
+    top: 5%;
 }
 
 
